@@ -21,7 +21,9 @@ Example:
 ```
 Optionaly add data-text-on and data-text-off attributes to control the text of the switch using CSS pseudo classes.
 Example:
-```<div class="theme-color-switch" data-text-on="OFF" data-text-off="ON"></div>```
+```
+<div class="theme-color-switch" data-text-on="OFF" data-text-off="ON"></div>
+```
 
 ### 4. Initialize
 Initialize on HTML tag you want to change on click.
@@ -32,4 +34,3 @@ In this example this is ```<div class="demo-wrapper">...</div>```
 
 ### 5. Use CSS
 Using CSS and ```.alt-theme-color``` and ```.switch-on``` classes create any color mode
-```
