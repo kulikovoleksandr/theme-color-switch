@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark mode javascript plugin</title>
+    <meta name="description" content="">
+    <meta name="Keywords" content="dark mode, night mode, javascript plugin">
+    <link rel="stylesheet" href="demo-styles.css" />
+    <link rel="stylesheet" href="theme-color-switch.css" />
+  </head>
+  <body>
+    <div class="demo-wrapper">
+      <div class="demo-container">
+        <h1>Dark mode javascript plugin.</h1>
+        <p>
+          Dark (or any other color) mode javascript plugin. Save the mode in
+          browser local storage after page reload.
+        </p>
+
+        <div
+          class="theme-color-switch"
+          data-text-on="turn OFF dark mode"
+          data-text-off="turn ON dark mode"
+        ></div>
+
+        <div class="links">
+          <a href=""><b>Download</b></a>
+          <a href=""><b>Github</b></a>
+        </div>
+
+        <h2>Installation</h2>
+
+        <h3>1. Include CSS</h3>
+        <p>Include CSS file into your HTML head:</p>
+        <pre>      
+          <code>
+            <<span>link</span> rel="stylesheet" href="path/to/theme-color-switch.css">
+          </code>
+        </pre>
+
+        <h3>2. Include JS</h3>
+        <p>
+          Include JS file in the footer of your site (before the closing
+          <code><<span>/body</span>></code> tag).
+        </p>
+
+        <pre>      
+          <code>
+            <<span>script</span> src="path/to/theme-color-switch.min.js"><<span>/script</span>>
+          </code>
+        </pre>
+
+        <h3>3. Create HTML tag</h3>
+        <p>
+          Create any HTML tag with class <b>theme-color-switch</b>.
+          <br />Example:
+        </p>
+        <pre>
+          <code>
+            <<span>div</span> class="theme-color-switch">Click me<<span>/div</span>>
+          </code>
+        </pre>
+        <p>Optionaly add <b>data-text-on</b> and <b>data-text-off</b> attributes to
+        control the text of the switch using CSS pseudo classes. <br />Example:</p>
+        <pre>     
+          <code>
+            <<span>div</span> class="theme-color-switch" data-text-on="OFF" data-text-off="ON"><<span>/div</span>>
+          </code>
+        </pre>
+
+        <h3>4. Initialize</h3>
+        <p>
+          Initialize on HTML tag than will change on click. <br />In this
+          example this is
+          <code
+            ><<span>div class="demo-wrapper"</span>>...<<span>/div</span>></code
+          >
+        </p>
+        <p></p>
+        <pre>
+          <code>
+            <<span>script</span>>new ThemeColorSwitch('.demo-wrapper');<<span>/script</span>>
+          </code>
+        </pre>
+
+        <h3>5. Use CSS</h3>
+        <p>Create any mode using CSS and <code>.alt-theme-color</code> and <code>.switch-on</code></p>
+      </div>
+      <!-- demo-container -->
+    </div>
+    <!-- demo-wrapper -->
+  </body>
+  <script src="theme-color-switch.min.js"></script>
+  <script>
+    new ThemeColorSwitch('.demo-wrapper');
+  </script>
+</html>
